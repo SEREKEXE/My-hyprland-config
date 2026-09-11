@@ -1,0 +1,51 @@
+{
+    "height": 30, // Waybar height (to be removed for auto height)
+    // "width": 1280, // Waybar width
+    "spacing": 10, // Gaps between modules (4px)
+    // Choose the order of the modules
+    "modules-left": [
+
+      "pulseaudio",
+
+    ],
+    "modules-center": [
+      "clock",
+
+    ],
+    "modules-right": [
+
+      "network",
+      "battery",
+
+    ],
+
+
+"clock": {
+
+  "format": "{:%H:%M}",
+  "interval": "1",
+
+
+},
+
+"battery": {
+
+  "on-click": "hyprshutdown --post-cmd 'shutdown -P 0'",
+
+},
+
+"network": {
+
+  "format-wifi": "{essid}",
+  "on-click": "kitty -e nmtui-vi"
+
+
+},
+
+"pulseaudio": {
+
+  "on-click": "kitty -e wiremix",
+
+},
+
+}

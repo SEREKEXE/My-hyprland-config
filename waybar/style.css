@@ -1,0 +1,70 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "Noto Sans";
+    font-weight: 700;
+    font-size: 19px;
+    min-height: 0;
+    padding-top: 3;
+    padding-left: 3;
+    padding-right: 3;
+    border-radius: 15;
+    color: #8A8AD4;
+
+}
+
+window#waybar {
+    background: rgba(0, 0, 0, 0);
+    border-bottom: 3px solid rgba(0, 0, 0, 0);
+
+}
+
+
+
+
+
+
+#clock {
+    background-color: #2f2f48;
+    padding: 5;
+    padding-left: 10;
+    padding-right: 10;
+}
+
+#battery {
+    background-color: #2f2f48;
+
+    padding: 5;
+    padding-left: 10;
+    padding-right: 10;
+}
+
+
+
+#battery.warning:not(.charging) {
+    background: #f53c3c;
+    color: white;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: steps(12);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#network {
+
+    background-color: #2f2f48;
+    padding: 5;
+    padding-left: 10;
+    padding-right: 10;
+}
+
+#pulseaudio {
+
+    background-color: #2f2f48;
+    padding: 5;
+    padding-left: 10;
+    padding-right: 10;
+
+
+}
